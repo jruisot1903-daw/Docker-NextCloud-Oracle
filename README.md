@@ -5,15 +5,6 @@ Este repositorio contiene la arquitectura necesaria para desplegar una plataform
 
 ---
 
-## 🚀 Características Principales
-
-* **📦 Despliegue Inmediato:** Arquitectura basada en contenedores (Docker & Compose).
-* **🗄️ Persistencia de Datos:** Motor de base de datos **Oracle XE** para una gestión empresarial.
-* **👤 Gestión de Usuarios:** Preparado para federación de identidades mediante protocolos de directorio.
-* **🛠️ Sin Compilación:** Utiliza imágenes pre-configuradas listas para el despliegue.
-
----
-
 ## 🛠️ Stack Tecnológico
 
 | Componente | Tecnología | Función |
@@ -26,7 +17,7 @@ Este repositorio contiene la arquitectura necesaria para desplegar una plataform
 ---
 
 ## 📖 Documentación
-Manual para la comfiguración incial : [manual NextCloudxOracle](https://docs.google.com/document/d/1Ee_0mcnFe77Rk0WLifxi_VPN2EtplTLK4JAJJmOmXN8/edit?tab=t.0).
+Manual para la comfiguración incial : [manual NextCloudxOracle](https://docs.google.com/document/d/14G4M4l18rx6COtj7cJIxt9CZqIYJiJX08Hg_ml4WeZQ/edit?usp=sharing).
 
 ## ⚙️ Puesta en Marcha
 
