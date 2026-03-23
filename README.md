@@ -1,21 +1,30 @@
-# Nextcloud Corporativo con Persistencia en Oracle
-Este proyecto despliega Nextcloud usando Docker, configurado para conectar con una base de datos Oracle y autenticación LDAP.
+☁️ Nextcloud Enterprise Stack (Docker + Oracle)
+Este repositorio contiene la infraestructura necesaria para desplegar una plataforma de colaboración Nextcloud de alto rendimiento, diseñada para entornos profesionales que requieren integración con bases de datos Oracle y sistemas de identidad LDAP.
 
-## 🐳 Despliegue rápido
-docker-compose up -d --build
+🌟 Características principales
+Persistencia Robusta: Utiliza Oracle Database para la gestión de datos.
 
-## ⚙️ Configuración LDAP
-Para la conexión con el servidor de identidad, se han validado los siguientes parámetros:
+Identidad Centralizada: Preparado para conectar con Directorios Activos corporativos.
 
-Host: servidor.dominio.es (Puerto 389)
+Arquitectura Modular: Despliegue 100% basado en contenedores Docker para facilitar la portabilidad.
 
-Base DN: DC=dominio,DC=es
+Listo para el usuario: Interfaz web intuitiva para gestión de archivos, contactos y calendarios.
 
-Filtro de usuario: (objectclass=user)
+🚀 Cómo empezar
+Para poner en marcha el sistema, solo necesitas ejecutar un comando desde la raíz del proyecto:
 
-Nota técnica: Se ha identificado que el servidor de identidad puede retornar un Error 531. Esto indica una restricción de acceso por IP en el Directorio Activo, ajena a la configuración de la aplicación.
+Bash
 
-## 📁 Persistencia
-DB: Oracle XE (Contenedor persistente mediante volúmenes).
+docker-compose up -d
 
-Archivos: Almacenados en el volumen nextcloud_data.
+📦 Contenido del Repositorio
+docker-compose.yml: Orquestación completa de los servicios (Aplicación + Base de Datos).
+
+Configuraciones: Archivos necesarios para la comunicación entre Nextcloud y Oracle.
+
+📖 Documentación adicional
+Para detalles técnicos profundos, pasos de configuración de red específicos o resolución de errores de protocolos (como el error de enlazado LDAP), consulta el Manual de Proyecto adjunto en la documentación oficial.
+[Manual](https://docs.google.com/document/d/1Ee_0mcnFe77Rk0WLifxi_VPN2EtplTLK4JAJJmOmXN8/edit?tab=t.0).
+
+✒️ Autor
+Javier Ruiz Soto.
