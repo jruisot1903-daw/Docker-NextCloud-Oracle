@@ -1,30 +1,36 @@
-☁️ Nextcloud Enterprise Stack (Docker + Oracle)
-Este repositorio contiene la infraestructura necesaria para desplegar una plataforma de colaboración Nextcloud de alto rendimiento, diseñada para entornos profesionales que requieren integración con bases de datos Oracle y sistemas de identidad LDAP.
+# ☁️ Nextcloud Enterprise Stack
+### **Docker** × **Oracle XE** asociados mediante **LDAP**
 
-🌟 Características principales
-Persistencia Robusta: Utiliza Oracle Database para la gestión de datos.
+Este repositorio contiene la arquitectura necesaria para desplegar una plataforma de colaboración de alto rendimiento. El diseño está enfocado en entornos corporativos que requieren la robustez de **Oracle Database** y la integración de identidades mediante **LDAP/Active Directory**.
 
-Identidad Centralizada: Preparado para conectar con Directorios Activos corporativos.
+---
 
-Arquitectura Modular: Despliegue 100% basado en contenedores Docker para facilitar la portabilidad.
+## 🚀 Características Principales
 
-Listo para el usuario: Interfaz web intuitiva para gestión de archivos, contactos y calendarios.
+* **📦 Despliegue Inmediato:** Arquitectura basada en contenedores (Docker & Compose).
+* **🗄️ Persistencia de Datos:** Motor de base de datos **Oracle XE** para una gestión empresarial.
+* **👤 Gestión de Usuarios:** Preparado para federación de identidades mediante protocolos de directorio.
+* **🛠️ Sin Compilación:** Utiliza imágenes pre-configuradas listas para el despliegue.
 
-🚀 Cómo empezar
-Para poner en marcha el sistema, solo necesitas ejecutar un comando desde la raíz del proyecto:
+---
 
-Bash
+## 🛠️ Stack Tecnológico
 
+| Componente | Tecnología | Función |
+| :--- | :--- | :--- |
+| **Aplicación** | `Nextcloud Hub` | Interfaz web y gestión de archivos. |
+| **Base de Datos** | `Oracle Database XE` | Motor de persistencia relacional. |
+| **Orquestación** | `Docker Compose` | Gestión de servicios y redes aisladas. |
+| **Identidad** | `LDAP / AD` | Autenticación centralizada de usuarios. |
+
+---
+
+## 📖 Documentación
+Manual para la comfiguración incial : [manual NextCloudxOracle](https://docs.google.com/document/d/1Ee_0mcnFe77Rk0WLifxi_VPN2EtplTLK4JAJJmOmXN8/edit?tab=t.0).
+
+## ⚙️ Puesta en Marcha
+
+Para levantar el ecosistema completo, asegúrate de tener instalado **Docker** y ejecuta el siguiente comando en la raíz del proyecto:
+
+```bash
 docker-compose up -d
-
-📦 Contenido del Repositorio
-docker-compose.yml: Orquestación completa de los servicios (Aplicación + Base de Datos).
-
-Configuraciones: Archivos necesarios para la comunicación entre Nextcloud y Oracle.
-
-📖 Documentación adicional
-Para detalles técnicos profundos, pasos de configuración de red específicos o resolución de errores de protocolos (como el error de enlazado LDAP), consulta el Manual de Proyecto adjunto en la documentación oficial.
-[Manual](https://docs.google.com/document/d/1Ee_0mcnFe77Rk0WLifxi_VPN2EtplTLK4JAJJmOmXN8/edit?tab=t.0).
-
-✒️ Autor
-Javier Ruiz Soto.
