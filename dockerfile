@@ -1,4 +1,4 @@
-FROM  nextcloud:30.0.5
+FROM  jruisot1903/nextcloud-sas-antequera:app-v1
 
 # 1. Dependencias esenciales
 RUN apt-get update && apt-get install -y \
