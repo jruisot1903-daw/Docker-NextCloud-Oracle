@@ -1,4 +1,4 @@
-# ☁️ Nextcloud Enterprise Stack
+# ☁️ Nextcloud Stack
 ### **Docker** × **Oracle XE** asociados mediante **LDAP**
 
 Este repositorio contiene la arquitectura necesaria para desplegar una plataforma de colaboración de alto rendimiento. El diseño está enfocado en entornos corporativos que requieren la robustez de **Oracle Database** y la integración de identidades mediante **LDAP/Active Directory**.
