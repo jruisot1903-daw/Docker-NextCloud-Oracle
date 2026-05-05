@@ -13,7 +13,6 @@ services:
 
   nextcloud:
     image: jruisot1903/nextcloud-sas-antequera:app-v1
-    hostname: MAP02028A13N
     container_name: nextcloud-app
     ports:
       - "8081:80"
